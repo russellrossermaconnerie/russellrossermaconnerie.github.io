@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Russell Rosser Maçonnerie — Maçon à votre service</title>
+  <meta name="description" content="Russell Rosser Maçonnerie — Travaux de maçonnerie, rénovations, terrassements et construction de murs. Devis gratuit." />
+  <meta name="theme-color" content="#0f172a">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg:#0f172a; --card:#0b1220; --muted:#9aa4b2; --accent:#d97706; --accent-2:#f59e0b;
+      --radius:12px; font-family:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,#071025 0%, #07162a 100%);color:#e6eef8;}
+    .container{max-width:1100px;margin:0 auto;padding:28px}
+    header{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:54px;height:54px;border-radius:10px;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:flex;align-items:center;justify-content:center;font-weight:800;color:#07162a}
+    .brand h1{margin:0;font-size:18px;letter-spacing:0.2px}
+    nav{display:flex;gap:14px;align-items:center}
+    nav a{color:var(--muted);text-decoration:none;font-weight:600;padding:8px 12px;border-radius:8px;transition:background .2s}
+    nav a:hover{background:rgba(255,255,255,0.06);color:white}
+    .btn{background:var(--accent);color:#07162a;padding:10px 16px;border-radius:10px;font-weight:700;text-decoration:none;transition:background .2s}
+    .btn:hover{background:var(--accent-2)}
+
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;margin-top:18px}
+    .hero-card{background:linear-gradient(180deg,rgba(255,255,255,0.03),rgba(255,255,255,0.01));border-radius:16px;padding:28px}
+    .kicker{color:var(--accent);font-weight:700;font-size:13px}
+    .hero h2{margin:8px 0 12px;font-size:34px;line-height:1.1}
+    .hero p{color:var(--muted);margin:0 0 18px}
+    .gallery{border-radius:12px;overflow:hidden;height:100%;background-image:url('https://images.unsplash.com/photo-1509395176047-4a66953fd231?auto=format&fit=crop&w=1200&q=60');background-size:cover;background-position:center}
+
+    .services{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px;margin:28px 0}
+    .service{background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));padding:18px;border-radius:12px;transition:transform .2s}
+    .service:hover{transform:translateY(-3px)}
+    .service h3{margin:8px 0}
+    .muted{color:var(--muted)}
+
+    .contact{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:28px 0}
+    .contact form{background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));padding:18px;border-radius:12px}
+    label{display:block;font-size:13px;margin-bottom:6px}
+    input,textarea{width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.1);background:transparent;color:inherit}
+    textarea{min-height:120px}
+    .foot{display:flex;justify-content:space-between;align-items:center;padding:20px 0;color:var(--muted);font-size:14px;flex-wrap:wrap;text-align:center}
+
+    @media (max-width:800px){.hero{grid-template-columns:1fr}.contact{grid-template-columns:1fr}.foot{flex-direction:column;gap:8px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">RR</div>
+        <div>
+          <h1>Russell Rosser Maçonnerie</h1>
+          <div class="muted">Maçon professionnel — Rénovation & Construction</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#services" class="btn">Nos services</a>
+        <a href="#contact" class="btn">Contact / Devis</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-card">
+          <div class="kicker">Service local & fiable</div>
+          <h2>Travaux de maçonnerie de qualité — sécurité & savoir-faire</h2>
+          <p>Plus de 17 ans d’expérience dans la construction et la rénovation : murs, fondations, façades, terrassements et dallages.</p>
+          <p><a class="btn" href="#contact">Demander un devis</a></p>
+        </div>
+        <aside class="gallery"></aside>
+      </section>
+
+      <section id="services">
+        <h2>Nos services</h2>
+        <div class="services">
+          <div class="service">
+            <h3>Maçonnerie générale</h3>
+            <p class="muted">Élévation de murs, pose de parpaings et briques, coffrage et ferraillage.</p>
+          </div>
+          <div class="service">
+            <h3>Rénovation & réhabilitation</h3>
+            <p class="muted">Réfection de façades, rejointoiement, consolidation et petits travaux structuraux.</p>
+          </div>
+          <div class="service">
+            <h3>Terrassement & dallage</h3>
+            <p class="muted">Préparation de sols, fondations, pose de dalles et aménagements extérieurs.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>Contact & Devis</h2>
+        <div class="contact">
+          <form onsubmit="return handleSubmit(event)">
+            <label for="name">Nom / Société</label>
+            <input id="name" name="name" placeholder="Votre nom" required>
+
+            <label for="phone">Téléphone</label>
+            <input id="phone" name="phone" placeholder="06 00 00 00 00" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Décrivez votre projet (type de travaux, surface, lieu)..." required></textarea>
+
+            <p><button type="submit" class="btn">Envoyer la demande</button></p>
+            <p class="muted">Ou appelez directement : <strong>06 23 82 46 82</strong></p>
+          </form>
+
+          <div class="hero-card">
+            <h3>Informations</h3>
+            <p class="muted">
+              Russell Rosser Maçonnerie<br>
+              Email : <a href="mailto:mr.rosser.russell@orange.fr" style="color:var(--accent)">mr.rosser.russell@orange.fr</a><br>
+              <br>
+              <strong>Horaires :</strong><br>
+              Lun–Ven : 8h–18h<br>
+              Sam : sur rendez-vous
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="foot">
+      <div>© <span id="year"></span> Russell Rosser Maçonnerie</div>
+      <div class="muted">Tous droits réservés</div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    function handleSubmit(e){
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const message = document.getElementById('message').value.trim();
+      const to = 'mr.rosser.russell@orange.fr';
+      const subject = encodeURIComponent('Demande de devis — ' + name);
+      const body = encodeURIComponent('Nom: ' + name + '\\nTéléphone: ' + phone + '\\n\\nMessage:\\n' + message);
+      window.location.href = `mailto:${to}?subject=${subject}&body=${body}`;
+      return false;
+    }
+  </script>
+</body>
+</html>
