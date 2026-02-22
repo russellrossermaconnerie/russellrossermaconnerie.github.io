@@ -11,45 +11,43 @@
   <link rel="shortcut icon" href="favicon.png" type="image/png">
   <link href="favicon.png" rel="icon">
 
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MasonryBusiness",
+      "name": "Russell Rosser Maçonnerie",
+      "image": "https://russellrossermaconnerie.github.io/favicon.png",
+      "url": "https://russellrossermaconnerie.github.io/",
+      "telephone": "+33623824682",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Le Bourg",
+        "addressLocality": "Bréhan",
+        "postalCode": "56580",
+        "addressRegion": "Bretagne",
+        "addressCountry": "FR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 48.0559, 
+        "longitude": -2.6865
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "08:00",
+        "closes": "18:00"
+      }
+    }
+  </script>
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "MasonryBusiness",
-  "name": "Russell Rosser Maçonnerie",
-  "image": "https://russellrossermaconnerie.github.io/favicon.png",
-  "url": "https://russellrossermaconnerie.github.io/",
-  "telephone": "+33623824682",
-  "priceRange": "$$",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Le Bourg",
-    "addressLocality": "Bréhan",
-    "postalCode": "56580",
-    "addressRegion": "Bretagne",
-    "addressCountry": "FR"
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": 48.0559, 
-    "longitude": -2.6865
-  },
-  "openingHoursSpecification": {
-    "@type": "OpeningHoursSpecification",
-    "dayOfWeek": [
-      "Monday",
-      "Tuesday",
-      "Wednesday",
-      "Thursday",
-      "Friday"
-    ],
-    "opens": "08:00",
-    "closes": "18:00"
-  }
-}
-</script>
-
-  
   <style>
     :root{
       --bg:#0f172a; --card:#0b1220; --muted:#9aa4b2; --accent:#d97706; --accent-2:#f59e0b;
@@ -65,7 +63,7 @@
     nav{display:flex;gap:14px;align-items:center}
     nav a{color:var(--muted);text-decoration:none;font-weight:600;padding:8px 12px;border-radius:8px;transition:background .2s}
     nav a:hover{background:rgba(255,255,255,0.06);color:white}
-    .btn{background:var(--accent);color:#07162a;padding:10px 16px;border-radius:10px;font-weight:700;text-decoration:none;transition:background .2s}
+    .btn{background:var(--accent);color:#07162a;padding:10px 16px;border-radius:10px;font-weight:700;text-decoration:none;transition:background .2s;border:none;cursor:pointer;display:inline-block}
     .btn:hover{background:var(--accent-2)}
 
     .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;margin-top:18px}
@@ -84,7 +82,7 @@
     .contact{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:28px 0}
     .contact form{background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));padding:18px;border-radius:12px}
     label{display:block;font-size:13px;margin-bottom:6px}
-    input,textarea{width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.1);background:transparent;color:inherit}
+    input,textarea{width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.1);background:transparent;color:inherit;margin-bottom:15px}
     textarea{min-height:120px}
     .foot{display:flex;justify-content:space-between;align-items:center;padding:20px 0;color:var(--muted);font-size:14px;flex-wrap:wrap;text-align:center}
 
@@ -111,12 +109,9 @@
       <section class="hero">
         <div class="hero-card">
           <div class="kicker">Service local & fiable: SIREN = 827712423</div>
-          <h2>Travaux de maçonnerie de qualité 
-          </br>
-            - sécurité & savoir-faire</h2>
-          <p> -Plus de 17 ans d’expérience dans la construction et la rénovation : murs, fondations, façades, terrassements et dallages.
-        </br>
-            - Inscrit sur les pages jaune : <a href="https://www.pagesjaunes.fr/pros/57086181"> Voir la page </a> </p>
+          <h2>Travaux de maçonnerie de qualité<br>- sécurité & savoir-faire</h2>
+          <p>- Plus de 17 ans d’expérience dans la construction et la rénovation : murs, fondations, façades, terrassements et dallages.<br>
+          - Inscrit sur les pages jaune : <a href="https://www.pagesjaunes.fr/pros/57086181" style="color:var(--accent)">Voir la page</a></p>
           <p><a class="btn" href="#contact">Demander un devis</a></p>
         </div>
         <aside class="gallery"></aside>
@@ -143,8 +138,7 @@
       <section id="contact">
         <h2>Contact & Devis</h2>
         <div class="contact">
-          <form  action="https://formspree.io/f/mrbydgpl"
-                 method="POST">
+          <form action="https://formspree.io/f/mrbydgpl" method="POST">
             <label for="name">Nom / Société</label>
             <input id="name" name="name" placeholder="Votre nom" required>
 
@@ -162,7 +156,7 @@
             <h3>Informations</h3>
             <p class="muted">
               Russell Rosser Maçonnerie<br>
-              Email : mr.rosser.russell@orange.fr</a><br>
+              Email : mr.rosser.russell@orange.fr<br>
               <br>
               <strong>Horaires :</strong><br>
               Lun–Ven : 8h–18h<br>
@@ -181,17 +175,7 @@
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
-    function handleSubmit(e){
-      e.preventDefault();
-      const name = document.getElementById('name').value.trim();
-      const phone = document.getElementById('phone').value.trim();
-      const message = document.getElementById('message').value.trim();
-      const to = 'mr.rosser.russell@orange.fr';
-      const subject = encodeURIComponent('Demande de devis — ' + name);
-      const body = encodeURIComponent('Nom: ' + name + '\\nTéléphone: ' + phone + '\\n\\nMessage:\\n' + message);
-      window.location.href = `mailto:${to}?subject=${subject}&body=${body}`;
-      return false;
-    }
   </script>
 </body>
 </html>
+
